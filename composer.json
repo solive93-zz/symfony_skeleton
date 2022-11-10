@@ -28,13 +28,15 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "src/",
-            "Test\\": "tests/"
+            "App\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "App\\Tests\\": "tests/"
+            "Tests\\": ["tests/*"],
+            "Tests\\Unit\\": "tests/unit/",
+            "Tests\\Integration\\": "tests/integration/",
+            "Tests\\Function\\": "tests/functional/"
         }
     },
     "replace": {
